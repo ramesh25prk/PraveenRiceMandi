@@ -69,6 +69,7 @@ namespace Stock_Management
         private void AddProduct_Click(object sender, EventArgs e)
         {
             string currentdate = dateTimePicker1.Value.ToString("dd/MM/yyyy");
+            string currentdates = dateTimePicker1.Value.ToString("dd/MM/yyyy");
             SqlConnection con = new SqlConnection(@"Data Source=192.168.43.72,69\ChandiranRM;User ID = sa;Password = praveen;Initial Catalog=Stock Maintenance;Integrated Security=False");
             //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=RiceMandy;Integrated Security=True");
             con.Open();
