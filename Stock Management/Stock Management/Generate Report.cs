@@ -19,7 +19,7 @@ namespace Stock_Management
             InitializeComponent();
         }
 
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)       
         {
             string reportdate = report_dateTimePicker2.Value.ToString("dd/MM/yyyy");
             SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=RiceMandy;Integrated Security=True");
@@ -68,7 +68,7 @@ namespace Stock_Management
                 Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
                 worksheet = workbook.Sheets["Sheet1"];
                 worksheet = workbook.ActiveSheet;
-                worksheet.Name = "Report" + DateTime.Now.ToShortDateString();
+               //worksheet.Name = "Report" + DateTime.Now.ToShortDateString();
 
 
                 worksheet.Cells[1, 1] = "S.No";
