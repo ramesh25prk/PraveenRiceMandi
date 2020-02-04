@@ -95,7 +95,7 @@ namespace Stock_Management
             }
             catch (Exception x)
             {
-                MessageBox.Show(x.Message + Environment.NewLine + "Try installing MS Office");
+                //MessageBox.Show(x.Message + Environment.NewLine + "Try installing MS Office");
             }
         }
     }
